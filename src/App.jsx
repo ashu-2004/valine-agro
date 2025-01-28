@@ -1,7 +1,13 @@
+import Footer from "./components/Footer";
+import Contact from "./routes/Contact";
+import Gallery from "./routes/Gallery";
+
 function App() {
   return (
     <>
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <Gallery></Gallery>
+    <Contact></Contact>
+      <Footer></Footer>
     </>
   );
 }

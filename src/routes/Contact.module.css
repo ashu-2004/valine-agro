@@ -1,0 +1,98 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; /* Stretch the cards to have the same height */
+    justify-content: space-between;
+    max-width: 100rem;
+    margin: 0 auto;
+    gap: 1rem;
+  }
+  
+  .contact-form,
+  .address-container {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Allow the elements to grow */
+    overflow: hidden;
+  }
+  
+  .contact-form {
+    background-color: #fff;
+  }
+  
+  .address-container {
+    background-color: #f9fafb;
+  }
+  
+  .card-header {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 1rem;
+    color: white;
+  }
+  
+  .card-header.bg-primary {
+    background-color: #007bff;
+  }
+  
+  .card-header.bg-success {
+    background-color: #28a745;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+    flex-grow: 1; /* Allow the body to grow and fill the remaining space */
+    overflow: hidden;
+  }
+  
+  .card-body .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-body .form-control {
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+  
+  .card-body .btn {
+    border-radius: 0.5rem;
+    padding: 0.75rem 2rem;
+  }
+  
+  .card-body .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .card-body iframe {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .text-center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .col-12 {
+      width: 100%;
+    }
+  
+    .contact-form, .address-container {
+      height: auto;
+    }
+  
+    .card-body iframe {
+      height: 300px; /* Adjust the iframe height for small screens */
+    }
+  }
+  
